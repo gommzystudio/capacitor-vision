@@ -1,11 +1,13 @@
 # ocrplugin
 
-Test
+Capacitor plugin for Apple Vision (OCR).
+Use scan(base64) to extract text from an image.
+It's only available on apple devices.
 
 ## Install
 
 ```bash
-npm install ocrplugin
+npm install capacitor-vision
 npx cap sync
 ```
 

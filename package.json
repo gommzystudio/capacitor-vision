@@ -1,7 +1,7 @@
 {
-  "name": "ocrplugin",
-  "version": "0.0.2",
-  "description": "Test",
+  "name": "capacitor-vision",
+  "version": "0.0.4",
+  "description": "Capacitor plugin for Apple Vision. Use scan(base64) to extract text from an image.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gommzystudio/ocrlugin.git"
+    "url": "git+https://github.com/gommzystudio/capacitor-vision.git"
   },
   "bugs": {
-    "url": "https://github.com/gommzystudio/ocrlugin/issues"
+    "url": "https://github.com/gommzystudio/capacitor-vision/issues"
   },
   "keywords": [
     "capacitor",
