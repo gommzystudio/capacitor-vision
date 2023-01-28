@@ -1,6 +1,6 @@
 {
   "name": "capacitor-vision",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Capacitor plugin for Apple Vision. Use scan(base64) to extract text from an image.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
