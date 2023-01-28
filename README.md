@@ -1,4 +1,4 @@
-# capacitor-visio
+# capacitor-vision
 
 Capacitor plugin for Apple Vision (OCR).
 Use scan(base64) to extract text from an image.
