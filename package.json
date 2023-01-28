@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-vision",
+  "name": "ocrplugin",
   "version": "0.0.6",
   "description": "Capacitor plugin for Apple Vision (OCR) to extract text from images",
   "main": "dist/plugin.cjs.js",
