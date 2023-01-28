@@ -1,6 +1,6 @@
 {
   "name": "capacitor-vision",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Capacitor plugin for Apple Vision (OCR) to extract text from images",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "capacitor-vision.podspec"
+    "CapacitorVision.podspec"
   ],
   "author": "Gommzy",
   "license": "MIT",
