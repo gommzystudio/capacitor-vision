@@ -1,3 +1,4 @@
+
 export interface ocrPlugin {
-  scan( image: string ): Promise<{ text: string }>;
+  scan(options: {image: string}): Promise<{ text: string[] }>;
 }
