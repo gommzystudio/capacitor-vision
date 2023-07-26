@@ -48,7 +48,7 @@ public class ocrPlugin extends Plugin {
         } catch (Exception e) {
             e.printStackTrace();
             JSONArray jsonArray = new JSONArray();
-            jsonArray.put("Dieses Gerät untertützt");
+            jsonArray.put("Dieses Gerät wird nicht untertützt");
             JSObject ret = new JSObject();
             ret.put("text", jsonArray);
             call.resolve(ret);
