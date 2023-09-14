@@ -1,39 +1,57 @@
-# capacitor-vision
+# Capacitor-Vision: OCR Plugin for Capacitor with Apple Vision & Google ML Kit
 
-Capacitor plugin for Apple Vision (OCR).
-Use scan(base64) to extract text from an image.
-It's only available on apple devices.
+Unlock powerful Optical Character Recognition (OCR) capabilities in your Capacitor applications. With `capacitor-vision`, tap into Apple Vision for iOS and Google's ML Kit for Android to seamlessly extract text from images.
 
-## Install
+## Installation
+
+Integrate `capacitor-vision` into your project with just a few commands:
 
 ```bash
 npm install capacitor-vision
 npx cap sync
 ```
 
-## API
+## Usage
 
-<docgen-index>
+### OCR Scan API
 
-* [`scan(...)`](#scan)
+Effortlessly extract text from images with the `scan` method.
 
-</docgen-index>
-
-<docgen-api>
-<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
-
-### scan(...)
+#### Method Signature:
 
 ```typescript
 scan(options: { image: string; }) => Promise<{ text: string[]; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ image: string; }</code> |
+#### Parameters:
 
-**Returns:** <code>Promise&lt;{ text: string[]; }&gt;</code>
+- **`options`**: Object containing:
+    - **`image`**: A base64 encoded string of the image you wish to process.
 
---------------------
+#### Returns:
 
-</docgen-api>
+- A promise resolving to an object containing an array of extracted text strings.
+
+#### Example:
+
+Extract text from a base64 formatted image:
+
+```javascript
+import { CapacitorVision } from 'capacitor-vision';
+
+const imageBase64 = "YOUR_BASE64_ENCODED_IMAGE_HERE";
+
+CapacitorVision.scan({ image: imageBase64 })
+  .then(response => {
+    console.log(response.text);  // Logs the extracted text from the image
+  })
+  .catch(error => {
+    console.error("OCR error:", error);
+  });
+```
+
+### Apps Using `capacitor-vision`
+
+- [**`AiTutor`**](https://apps.apple.com/us/app/aitutor-hausaufgaben-lösen/id1668208873) - A homework helper app that uses `capacitor-vision` to extract text from images of math problems.
+
+Are you using `capacitor-vision` in your app? Submit a PR to add it to the list!

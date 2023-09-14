@@ -1,6 +1,6 @@
 {
   "name": "capacitor-vision",
-  "version": "0.0.13",
+  "version": "0.0.16",
   "description": "Capacitor plugin for Apple Vision (OCR) to extract text from images",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -41,7 +41,8 @@
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "@capacitor/android": "^5.0.0",
@@ -59,9 +60,6 @@
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
     "typescript": "~4.1.5"
-  },
-  "peerDependencies": {
-    "@capacitor/core": "^4.0.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
